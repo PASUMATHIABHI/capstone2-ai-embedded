@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "author": "Beginner Embedded Guide",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-arduino-uno",
+      "id": "uno",
+      "top": 40,
+      "left": 20,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-servo",
+      "id": "servo1",
+      "top": 60,
+      "left": 310,
+      "attrs": {
+        "horn": "single"
+      }
+    }
+  ],
+  "connections": [
+    [
+      "servo1:V+",
+      "uno:5V",
+      "red",
+      [
+        "v20",
+        "h-110"
+      ]
+    ],
+    [
+      "servo1:GND",
+      "uno:GND.2",
+      "black",
+      [
+        "v30",
+        "h-90"
+      ]
+    ],
+    [
+      "servo1:PWM",
+      "uno:9",
+      "orange",
+      [
+        "v0"
+      ]
+    ]
+  ],
+  "dependencies": {}
+}

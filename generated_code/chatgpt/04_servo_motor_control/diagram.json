@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "author": "OpenAI",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 20, "left": 30, "attrs": {} },
+    { "type": "wokwi-servo", "id": "servo1", "top": 80, "left": 340, "attrs": { "horn": "single" } }
+  ],
+  "connections": [
+    [ "uno:9", "servo1:PWM", "orange", [] ],
+    [ "uno:5V", "servo1:V+", "red", [] ],
+    [ "uno:GND.2", "servo1:GND", "black", [] ]
+  ]
+}

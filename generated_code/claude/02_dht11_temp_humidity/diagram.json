@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "author": "Beginner Embedded Guide",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-arduino-uno",
+      "id": "uno",
+      "top": 40,
+      "left": 20,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht1",
+      "top": -60,
+      "left": 260,
+      "attrs": {
+        "temperature": "24.5",
+        "humidity": "55"
+      }
+    }
+  ],
+  "connections": [
+    [
+      "dht1:VCC",
+      "uno:5V",
+      "red",
+      [
+        "v20",
+        "h-90"
+      ]
+    ],
+    [
+      "dht1:GND",
+      "uno:GND.2",
+      "black",
+      [
+        "v30",
+        "h-70"
+      ]
+    ],
+    [
+      "dht1:SDA",
+      "uno:2",
+      "blue",
+      [
+        "v15"
+      ]
+    ]
+  ],
+  "dependencies": {}
+}

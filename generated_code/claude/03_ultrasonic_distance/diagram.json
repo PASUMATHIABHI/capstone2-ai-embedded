@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "author": "Beginner Embedded Guide",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-arduino-uno",
+      "id": "uno",
+      "top": 50,
+      "left": 20,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-hc-sr04",
+      "id": "hc1",
+      "top": -70,
+      "left": 230,
+      "attrs": {
+        "distance": "75"
+      }
+    }
+  ],
+  "connections": [
+    [
+      "hc1:VCC",
+      "uno:5V",
+      "red",
+      [
+        "v20",
+        "h-80"
+      ]
+    ],
+    [
+      "hc1:GND",
+      "uno:GND.2",
+      "black",
+      [
+        "v30",
+        "h-60"
+      ]
+    ],
+    [
+      "hc1:TRIG",
+      "uno:9",
+      "orange",
+      [
+        "v10"
+      ]
+    ],
+    [
+      "hc1:ECHO",
+      "uno:10",
+      "yellow",
+      [
+        "v15"
+      ]
+    ]
+  ],
+  "dependencies": {}
+}
