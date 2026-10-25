@@ -1,10 +1,5 @@
 # CAPSTONE 2 — AI-Assisted Arduino/ESP32 Code Generation and Verification
 
-**Course:** AI Capstone Projects for ECE Students  
-**Weightage:** 100 marks  
-**Author:** PASUMATHIABHI  
-**Date:** October 2026
-
 ---
 
 ## Project Question
